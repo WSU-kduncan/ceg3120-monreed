@@ -1,7 +1,7 @@
 status - Shows status of the local repository. This status includes:
-- number of local commits that have not been synced with remote (GitHub)
-- list of files in local folder than are NOT being tracked by git
-- list of files in local folder that have changes that need to be committed
+	> number of local commits that have not been synced with remote (GitHub)
+	> list of files in local folder than are NOT being tracked by git
+	> list of files in local folder that have changes that need to be committed
 
 	> git status
 
@@ -37,6 +37,17 @@ pull - Used to execute both git fetch and git merge in one step. Since this is i
 
 	> git pull 
 
-branch - 
+branch - Used to create/delete/edit branches, which are independent workspaces aside from your 'main' branch. 
 
-checkout
+	> git branch -a (List all branches)
+	> git branch <Name> (Create branch with name 'Name')
+	> git branch -d <Name> (Delete branch 'Name')
+	
+ 
+
+checkout - Used to switch between which branch/working directory you are operating in. Also serves to update the main working directory with the code that was created or modified in a separate branch. Basically, once you're certain the new code won't break everything, you use `git checkout` to apply the changes. 
+
+	> git checkout <Name> (Switch to branch 'Name')
+	> git checkout -b <Name> (Create new branch and immediately switch to it)
+	> git checkout -b <New_Branch> <Old_Branch> (Create new branch 'New_Branch' but base it off of existing branch 'Old_Branch')
+	
