@@ -51,4 +51,14 @@
 	> git checkout <Name> (Switch to branch 'Name')
 	> git checkout -b <Name> (Create new branch and immediately switch to it)
 	> git checkout -b <New_Branch> <Old_Branch> (Create new branch 'New_Branch' but base it off of existing branch 'Old_Branch')
+
+**.git folder** - A folder present in any GitHub repository that allows the user to see all of the information about the project/repository and all commit information and history. 
+**.gitignore file** - This command is used to tell GitHub which files or directories you want to ignore so far as tracking goes. Basically, they'll be present on your local filesystem but not be included when it comes to commits and pushes to the main repository. 
+
+**Pull requests** - A pull request is a way to start discussion when a member on a project team is ready to apply new changes to a repository or alert the others on your team when you have pushed new changes to a branch in said repository. 
+
+**SSH authentication to repositories** - Includes generating a key on your local filesystem and adding that key to your SSH and GPG keys section in your GitHub settings so that you are authorized access to clone repositories on that system. Command to create key:
+
+	> ssh-keygen -t ed25519 -C "user@email.com"
+ 
 	
