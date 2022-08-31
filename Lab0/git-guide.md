@@ -1,3 +1,5 @@
+# Command line git
+
 **status** - Shows status of the local repository. This status includes:
 1. number of local commits that have not been synced with remote (GitHub)
 2.  list of files in local folder than are NOT being tracked by git
@@ -52,8 +54,17 @@
 	> git checkout -b <Name> (Create new branch and immediately switch to it)
 	> git checkout -b <New_Branch> <Old_Branch> (Create new branch 'New_Branch' but base it off of existing branch 'Old_Branch')
 
+# git files & folders
+
 **.git folder** - A folder present in any GitHub repository that allows the user to see all of the information about the project/repository and all commit information and history. 
+
+	> cd /Users/monicareed/.ssh/ceg3120-monreed/.git 
+
 **.gitignore file** - This command is used to tell GitHub which files or directories you want to ignore so far as tracking goes. Basically, they'll be present on your local filesystem but not be included when it comes to commits and pushes to the main repository. 
+
+	> .gitignore <file/dir>
+
+# GitHub
 
 **Pull requests** - A pull request is a way to start discussion when a member on a project team is ready to apply new changes to a repository or alert the others on your team when you have pushed new changes to a branch in said repository. 
 
@@ -61,4 +72,3 @@
 
 	> ssh-keygen -t ed25519 -C "user@email.com"
  
-	
