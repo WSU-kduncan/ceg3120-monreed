@@ -32,15 +32,15 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    hitchhiker_quotes = [
-        'There is an art, it says, or rather, a knack to flying. The knack lies in learning how to throw yourself at the ground and miss.',
-        'It is a mistake to think you can solve any major problems just with potatoes.',
-        'In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.',
-        'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
+    parenttrap_quotes = [
+        "Let me see... I know how to fence and you don't? Or, I have class and you don't? Take your pick.",
+        'Look at me Martin, have you ever seen me like this?! No, don’t answer that.',
+        'Oh, I would pay big money to see that woman climb a mountain.',
+        'If you ask me the bouquet is a little too robust for a Merlot, but then again I am partial to the softer California grape.',
     ]
-    if message.content == 'towel!':
-    #if message.content.startswith('$towel'):
-        response = random.choice(hitchhiker_quotes)
+    if message.content == 'trap!':
+    #if message.content.startswith('$trap'):
+        response = random.choice(parenttrap_quotes)
         await message.channel.send(response)
 
 client.run(TOKEN)
