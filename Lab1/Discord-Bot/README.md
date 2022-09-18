@@ -30,8 +30,8 @@
 
   2. How to use it ..
       - Create file **".env"** with this configuration:
-        - 1. # .env <br> 
-        `2. DISCORD_TOKEN=MTAxODk0NDk0NDIwOTE0NTkwNg.G_O9Mm.y-GhkfZWcgyqqYlO7Gg2pZiclxwqseb9slvUUQ`
+        - `1. # .env` <br> 
+        `2. DISCORD_TOKEN={your_discord_token}` *Note // Remove {}*
 
 
 # Usage 
