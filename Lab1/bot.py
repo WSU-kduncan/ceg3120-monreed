@@ -37,7 +37,10 @@ async def on_message(message):
         'Look at me Martin, have you ever seen me like this?! No, don’t answer that.',
         'Oh, I would pay big money to see that woman climb a mountain.',
         'If you ask me the bouquet is a little too robust for a Merlot, but then again I am partial to the softer California grape.',
-    ]
+        'I have a brilliant beyond brilliant idea!',
+        'Being young and beautiful isn’t a crime, you know.',
+        "Oh, don't do this to me. I'm already seeing double.",
+        ]
     if message.content == 'trap!':
     #if message.content.startswith('$trap'):
         response = random.choice(parenttrap_quotes)
