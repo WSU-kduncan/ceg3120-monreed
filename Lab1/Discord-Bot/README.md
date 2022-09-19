@@ -51,6 +51,7 @@
         1. `from dotenv import load_dotenv`
         2. `load_dotenv()` <br>
         `TOKEN = os.getenv('DISCORD_TOKEN')`
+        3. `client.run(TOKEN)`
 
 # Usage (2)
 
