@@ -29,10 +29,10 @@
 - Selected my VPC `REED-VPC` from dropdown when creating instance `Reed-Instance`. This attaches my instance to my VPC. 
 
 ## IPv4 Address (3)
-- A public IPv4 address will be auto-assigned to your instance upon creation.
+- A public IPv4 address can be generated upon instance creation, but I `disabled` this feature so that I can manually create my own `EIP` after. I am choosing an EIP because it does not change and will not be deleted if my instance is terminated or restarted at a later date. Without an EIP I risk having to continuously update my config file to SSH into my instance. 
 
 ## Attach Volume to Instance (4) 
-- Created `8gb gp2 volume` within the `Configure Storage` step of the instance creation process, automatically attaches to the instance.
+- Created an `8gb gp2 volume` within the `Configure Storage` step of the instance creation process, automatically attaches upon launch.
 
 ## Tag Instance (5) 
 - Created tag `Name`  -   `Reed-Instance` at the beginning of the instance creation process by typing into the `Name` space provided.
@@ -48,7 +48,7 @@
 ## Instance Details (8) 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/instance.png)
 
-## Change AMI Hostname
+## Change AMI Hostname (9)
 - First I ran `sudo cp /etc/hostname /etc/hostname.old` to save my old hostname
 - Then, I ran `sudo vim /etc/hostname` and rewrote my hostname as `REED-AMI`
 > ![image](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/AMI-hostname.png)
