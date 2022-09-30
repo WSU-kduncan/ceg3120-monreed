@@ -56,4 +56,6 @@
 ## Change AMI Hostname (9)
 - First I ran `sudo cp /etc/hostname /etc/hostname.old` to save my old hostname
 - Then, I ran `sudo vim /etc/hostname` and rewrote my hostname as `REED-AMI`
+
+## Successful SSH Connection w/ New Hostname (10)
 > ![image](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/AMI-hostname.png)
