@@ -2,20 +2,25 @@
 - Name: **Monica Reed**
 
 ## Create a VPC (1) 
+- A virtual private cloud `(VPC)` is a way to define network resources within a cloud environment.
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/VPC.jpg)
 
 ## Create a Subnet (2) 
+- A `subnet` is a way in which you can specify the range of IP addresses within your VPC. 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/Subnet.jpg)
 
 ## Create an Internet Gateway (3)
+- An `internet gateway` allows your VPC to communicate with connections/traffic beyond your subnet (i.e. the internet). 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/internet-gateway.jpg)
 
 ## Create a Route Table + Routes (4) 
+- A `route table` allows for you add rules that determine where certain traffic is sent to within your VPC. In this case, all destinations are being sent to our internet gateway. 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/route-table.jpg)
 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/routes.jpg)
 
 ## Create a Security Group + Inbound Rules (5) 
+- A `security group` is similar to a firewall in a sense that you can set rules that filter incoming and outgoing traffic. In this case, specifiying a list of valid IP addresses that are allowed as incoming traffic.
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/security-group.jpg)
 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/inboundrules.jpg)
