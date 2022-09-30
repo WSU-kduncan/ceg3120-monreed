@@ -1,18 +1,49 @@
-# Create a VPC (1)
+# Part 1 - Build a VPC 
+- Name: **Monica Reed**
+
+## Create a VPC (1) 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/VPC.jpg)
 
-# Create a Subnet (2) 
+## Create a Subnet (2) 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/Subnet.jpg)
 
-# Create an Internet Gateway (3)
+## Create an Internet Gateway (3)
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/internet-gateway.jpg)
 
-# Create a Route Table + Routes (4) 
+## Create a Route Table + Routes (4) 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/route-table.jpg)
 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/routes.jpg)
 
-# Create a Security Group + Inbound Rules (5) 
+## Create a Security Group + Inbound Rules (5) 
 > ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/security-group.jpg)
 
-> ![alt text]()
+> ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/inboundrules.jpg)
+
+# Part 2 - EC2 Instances  
+## Create New Instance (1)
+- `Ubuntu` AMI selected 
+- Default username is `ubuntu`
+
+## Attach Instance to VPC (2)
+- Selected my VPC `REED-VPC` from dropdown when creating instance `Reed-Instance`. This attaches my instance to my VPC. 
+
+## IPv4 Address (3)
+- A public IPv4 address will be auto-assigned to your instance upon creation.
+
+## Attach Volume to Instance (4) 
+- Created `8gb gp2 volume` within the `Configure Storage` step of the instance creation process, automatically attaches to the instance.
+
+## Tag Instance (5) 
+- Created tag `Name`  -   `Reed-Instance` at the beginning of the instance creation process by typing into the `Name` space provided.
+
+## Associate Security Group (6) 
+- Within the instance creation process, selected `Select existing security group` and chose `REED-sg` from the dropdown. This associated my security group with my instance. 
+
+## Allocate EIP (7)
+- I went to the `"Elastic IPs"` section within `"Network and Security"` and allocated a new Elastic IP Address. 
+- I created tag `Name`   -   `Reed-EIP` 
+- To associate it with my instance, I selected `"Associate Elastic IP Address"` from the `"Actions"` dropdown and selected my instance `Reed-Instance` to attach to and selected the default Private IP address provided.
+
+## Instance Details (8) 
+> ![alt text](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab2/Screenshots/instance.png)
