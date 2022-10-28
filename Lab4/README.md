@@ -1,4 +1,4 @@
-# Part 1   ⋆    Cloud Formation [*view here*](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab4/Lab4-CF.yml)
+# Part 1   ⋆    Cloud Formation [*view template*](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab4/Lab4-CF.yml)
 ---
 # Part 2   ⋆    Setup Load Balancing
 ### (1) Chose to configure `.ssh/config` for Proxy, webserv1, & webserv2 
