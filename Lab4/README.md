@@ -1,3 +1,5 @@
+# Part 1   ⋆    Cloud Formation [*view here*](https://github.com/WSU-kduncan/ceg3120-monreed/blob/main/Lab4/Lab4-CF.yml)
+---
 # Part 2   ⋆    Setup Load Balancing
 ### (1) Chose to configure `.ssh/config` for Proxy, webserv1, & webserv2 
   - File is configured as seen below > 
@@ -50,8 +52,11 @@ backend apache_webservers
   - On instances **webserv1** and **webserv2** ...
   
     - `sudo vim /etc/hosts` & append `3.226.124.88 proxy` // to associate Proxy instance to each webserver 
+  
     - `sudo systemctl enable apache2` // to enable apache2
+    
     - `sudo /etc/init.d/apache2 start` //  to start apache2 when ready 
+    
     - `sudo /etc/init.d/apache2 restart` // to restart apache2 after changes
   - On instance **webserv1** ...
     - `sudo vim /var/www/html/index.html` and overwrite with contents from [here](https://github.com/pattonsgirl/Fall2022-CEG3120/blob/main/Projects/Project4/index.srv1.html) 
