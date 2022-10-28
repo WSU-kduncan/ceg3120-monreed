@@ -54,14 +54,14 @@ backend apache_webservers
     - `sudo /etc/init.d/apache2 start` //  to start apache2 when ready 
     - `sudo /etc/init.d/apache2 restart` // to restart apache2 after changes
   - On instance **webserv1** ...
-    - `sudo vim /var/www/html/index.html` and append contents from [here](https://github.com/pattonsgirl/Fall2022-CEG3120/blob/main/Projects/Project4/index.srv1.html) 
+    - `sudo vim /var/www/html/index.html` and overwrite with contents from [here](https://github.com/pattonsgirl/Fall2022-CEG3120/blob/main/Projects/Project4/index.srv1.html) 
   - On instance **webserv2** ...
-    -  `sudo vim /var/www/html/index.html` and append contents from [here](https://github.com/pattonsgirl/Fall2022-CEG3120/blob/main/Projects/Project4/index.srv2.html) 
+    -  `sudo vim /var/www/html/index.html` and overwrite with contents from [here](https://github.com/pattonsgirl/Fall2022-CEG3120/blob/main/Projects/Project4/index.srv2.html) 
   - Our content files *(index.html)* are placed in `/var/www/html` because this is the home directory of our webserver. This is declared as `DocumentRoot` in your apache config file and can be set to whatever you please. 
-  -  *(optional)* run `curl <instance-ip>` // to test display 
+  -  *(optional)* run `curl <instance-ip>` // to test webserver
 
 ---
 
 ### (5) Connection to Proxy [⋆ *Try for Yourself* ⋆](http://3.226.124.88/) 
-> ![image](https://user-images.githubusercontent.com/97551273/198383029-890937a3-3673-421a-9c97-67a986f2899f.png)
+> ![image](https://user-images.githubusercontent.com/97551273/198383029-890937a3-3673-421a-9c97-67a986f2899f.png) <br />
 > ![image](https://user-images.githubusercontent.com/97551273/198383063-542edb51-ce9e-45fd-8e5a-a401daedef65.png)
