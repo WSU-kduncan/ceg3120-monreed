@@ -136,7 +136,7 @@ Resources:
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
-          CidrIp: 130.108.0.0/16  # WSU CIDR
+          CidrIp: 130.108.0.0/16  # WSU 
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
@@ -144,7 +144,11 @@ Resources:
         - IpProtocol: tcp
           FromPort: '80'
           ToPort: '80'
-          CidrIp: 0.0.0.0/0 # Port 80 Access
+          CidrIp: 0.0.0.0/0 # Port 80/HTTP for all IP's 
+        - IpProtocol: tcp
+          FromPort: '80'
+          ToPort: '80'
+          CidrIp: 10.0.0.0/16 # Port 80/HTTP for within VPC 
       Tags: 
         - Key: Name
           Value: P4-sg
